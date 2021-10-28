@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:primeiro_projeto/classes/imc_class.dart';
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({ Key? key }) : super(key: key);
@@ -9,25 +9,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  late TextEditingController _controller;
-
-  @override
-  void initState(){
-    super.initState();
-    _controller = TextEditingController();
-  }
- 
-  @override
-  void dispose(){
-    _controller.dispose();
-    super.dispose();
-  }
-
   @override
   Widget build(BuildContext context) {
-
-    Imc imc = Imc();
-
     return Scaffold(
       appBar: AppBar( 
         centerTitle: true,
